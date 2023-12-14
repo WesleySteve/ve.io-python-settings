@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ve-io-python-settings"
+version = "0.1.0"
+description = ""
+authors = ["Wesley Steve <wesley.silva23@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "ve"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
