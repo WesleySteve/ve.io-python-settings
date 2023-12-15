@@ -10,6 +10,22 @@ packages = [{include = "ve"}]
 python = "^3.12"
 
 
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.0"
+blue = "^0.9.1"
+isort = "^5.13.2"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+[tool.isort]
+profile = "black"
+line_length = 79
