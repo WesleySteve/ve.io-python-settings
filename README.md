@@ -10,6 +10,10 @@
 # WHere to find the tool
 - https://python-poetry.org/
 
+## Clone project
+- $ git clone https://github.com/WesleySteve/ve.io-python-settings.git name-project
+- $ git remote remove origin
+
 ## Step by step during project configuration
 - 1. remove diretory .git
   - $ rm -rf .git
@@ -26,7 +30,7 @@
   - $ poetry install
 - 8. install the pre-commit tool
   - $ pre-commit install
-- 9. modify the name of the base diretory and package diretory
+- 9. modify the name of package diretory
   - $ mv ve.io-python-Settings name-project
   - $ mv python_settings name_package
 - 10. run initial tests
