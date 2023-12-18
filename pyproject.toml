@@ -17,6 +17,12 @@ isort = "^5.13.2"
 pytest = "^7.4.3"
 pytest-cov = "^4.1.0"
 
+
+[tool.poetry.group.doc.dependencies]
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.2"
+mkdocstrings-python = "^1.7.5"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

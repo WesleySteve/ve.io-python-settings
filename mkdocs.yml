@@ -1,0 +1,10 @@
+site_name: Python Settings
+
+
+
+theme:
+  name: material
+  language: pt-BR
+
+markdown_extensions:
+  - attr_list
