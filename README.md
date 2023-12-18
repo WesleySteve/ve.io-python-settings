@@ -22,7 +22,9 @@
 - 3. configure poetry to use local virtualenv
   - $ poetry config virtualenvs.in-project true
 - 4. check the configuration made
-- 5. poetry config --list
+  - $ poetry config --list
+- 5. modify file pyproject.toml
+  - $ property packages = [{include = "python_settings"}] for name_package
 - 6. start a local git repository
   - $ git init
 - 7. enable poetry virtualenv
