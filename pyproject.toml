@@ -16,6 +16,7 @@ blue = "^0.9.1"
 isort = "^5.13.2"
 pytest = "^7.4.3"
 pytest-cov = "^4.1.0"
+taskipy = "^1.12.2"
 
 
 [tool.poetry.group.doc.dependencies]
@@ -35,3 +36,10 @@ addopts = "--doctest-modules"
 [tool.isort]
 profile = "black"
 line_length = 79
+
+[tool.taskipy.tasks]
+docs = "mkdocs serve"
+lint = "blue --check --diff . && isort --check --diff . && isort --check --diff ."
+pre_test = "task lint"
+test = "pytest -s -x --cov=tests/ -vv"
+post_test = "coverage html"
