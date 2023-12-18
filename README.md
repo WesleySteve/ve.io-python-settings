@@ -6,3 +6,6 @@
 
 ## Necesary package
 - Poetry
+
+# WHere to find the tool
+- https://python-poetry.org/
