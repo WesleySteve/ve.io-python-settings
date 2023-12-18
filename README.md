@@ -9,3 +9,30 @@
 
 # WHere to find the tool
 - https://python-poetry.org/
+
+## Step by step during project configuration
+- 1. remove diretory .git
+  - $ rm -rf .git
+- 2. check poetry virtualenv
+  - $ poetry config --list
+- 3. configure poetry to use local virtualenv
+  - $ poetry config virtualenvs.in-project true
+- 4. check the configuration made
+- 5. poetry config --list
+- 6. start a local git repository
+  - $ git init
+- 7. enable poetry virtualenv
+  - $ poetry shell
+  - $ poetry install
+- 8. install the pre-commit tool
+  - $ pre-commit install
+- 9. modify the name of the base diretory and package diretory
+  - $ mv ve.io-python-Settings name-project
+  - $ mv python_settings name_package
+- 10. run initial tests
+  -  $ task test
+- 11. check the example documentation
+  - $ task docs
+- 12. perform the initial commit
+  - $ git add .
+  - $ git commit -m "Starting project"
