@@ -10,6 +10,13 @@ disable=
     R0801, # Duplicate-code
     C0115, # missing-class-docstring
     R0903, # too-few-public-methods
+    W0237, # arguments-renamed
+    E0401, # import-untyped (import-error)
+    R0902, # (too-many-instance-attributes)
+    R0916, # (too-many-boolean-expressions)
+    R0913, # (too-many-arguments) -> Too many arguments (6/5)
+    W0702, # (bare-except)
+    
 
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
